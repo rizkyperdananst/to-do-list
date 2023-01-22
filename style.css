@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-dark: rgb(3, 9, 36);
+    --blue-light: rgb(26, 26, 104);
+    --red-light: rgb(114, 8, 8);
+    --white: white;
+}
+
+body {
+    background-color: var(--blue-dark);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    margin: 50px auto;
+    position: relative;
+    width: 100%;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.card {
+    background-color: aliceblue;
+    width: 500px;
+    height: 500px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px grey;
+    overflow: auto;
+}
+
+.card .card-header {
+    padding: 15px;
+}
+
+.card .card-body input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid black;
+    width: 70%;
+    margin-left: 7px;
+    border: 2px solid var(--blue-light);
+    caret-color: var(--blue-light);
+    color: var(--blue-light);
+}
+
+.card .card-body
+:is(input:focus) {
+    border: 2px solid var(--blue-light);
+    border-radius: 6px;
+}
+
+.card .card-body button {
+    border: none;
+    padding: 10px;
+    background-color: var(--blue-light);
+    color: var(--white);
+    border-radius: 5px;
+    width: 55px;
+}
+
+.card .card-body button.clear {
+    background-color: var(--red-light);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.card .card-header {
+    background-color: var(--blue-light);
+    color: var(--white);
+}
+
+.card .card-body {
+    padding: 15px;
+}
+
+.card .card-body .inputan {
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.card .card-body p {
+    background-color: var(--blue-light);
+    color: var(--white);
+    padding: 15px;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+.card .card-body i {
+    float: right;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+span:hover {
+    cursor: pointer;
+}
