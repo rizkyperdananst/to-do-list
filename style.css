@@ -107,3 +107,25 @@ i:hover {
 span:hover {
     cursor: pointer;
 }
+
+@media (min-width: 200px) and (max-width:500px) {
+    
+    .card {
+        width: 100%;
+    }
+
+    .card .card-body input {
+        width: 100%;
+    }
+
+    .card .card-body .add {
+        width: 40%;
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+
+    .card .card-body .clear {
+        width: 40%;
+    }
+
+}
